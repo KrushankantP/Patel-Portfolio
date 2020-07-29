@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile.component'
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {IntroComponent} from "./intro/intro.component";
+import {AboutComponent} from "./about/about.component";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {IntroComponent} from "./intro/intro.component";
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
-    IntroComponent
+    IntroComponent,
+    AboutComponent,
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
