@@ -8,6 +8,8 @@ import {NgxSpinnerModule} from "ngx-spinner";
 import { ProfileComponent } from './profile.component'
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
+import {IntroComponent} from "./intro/intro.component";
+
 
 @NgModule({
   imports: [
@@ -19,7 +21,8 @@ import {FooterComponent} from "./footer/footer.component";
   declarations: [
     ProfileComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    IntroComponent
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
