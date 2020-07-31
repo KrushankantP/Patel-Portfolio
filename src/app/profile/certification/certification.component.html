@@ -1,0 +1,27 @@
+<div class="section" id="education">
+  <div class="container" >
+    <div class="h4 text-center mb-4 title">Certifications</div>
+    <div>
+      <div class="card " >
+        <div class="row">
+          <div class="col-lg-6" *ngFor="let cert of certificationData"   >
+            <div class="row justify-content-center">
+              <div class="col-md-3 bg-primary">
+                <div data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <img class="cert__logo-img" [src]="cert.cert_Image">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="h7" style="vertical-align: middle">
+                    <p>{{cert.cert_Title}} - {{cert.cert_Issue_Date}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

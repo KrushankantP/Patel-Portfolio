@@ -45,7 +45,26 @@ export class InMemoryDataService implements InMemoryDbService {
         location:'Gujarat, India',
       },
     ];
-    return{education}
+
+    const certifications = [
+      {
+        cert_Id: 'cert1',
+        cert_Image:'assets/images/microsoft.png' ,
+        cert_Title:'70-486: Microsoft: Developing ASP.NET MVC Web Application',
+        cert_Issue_Date:'september 2019',
+        cert_URL:'',
+      },
+      {
+        cert_Id: 'cert2',
+        cert_Image:'assets/images/Oracle.png' ,
+        cert_Title:'1Z0-144: Oracle Database 11g: Program with PL/SQL',
+        cert_Issue_Date:'May 2020',
+        cert_URL:'',
+      },
+
+    ];
+
+    return { education, certifications }
   }
 
 
