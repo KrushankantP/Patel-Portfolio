@@ -64,8 +64,78 @@ export class InMemoryDataService implements InMemoryDbService {
 
     ];
 
-    return { education, certifications }
-  }
+    const programmingLanguages=[
+     { PL_Id: 'PL1', PL_Name: 'JavaScript', PL_Image: '' },
+     { PL_Id: 'PL2', PL_Name: 'TypeScript', PL_Image: '' },
+     { PL_Id: 'PL3', PL_Name: 'C#', PL_Image: '' },
+     { PL_Id: 'PL3', PL_Name: 'C#', PL_Image: '' }
+   ];
 
+    const frontEndTech=[
+      { FET_Id: 'FET1', FET_Name: 'HTML5', FET_Image:'' },
+      { FET_Id: 'FET2', FET_Name: 'CSS3', FET_Image:'' },
+      { FET_Id: 'FET3', FET_Name: 'Angular 6+', FET_Image: '' },
+      { FET_Id: 'FET4', FET_Name: 'JSON', FET_Image: '' },
+      { FET_Id: 'FET5', FET_Name: 'AJAX', FET_Image: '' },
+      { FET_Id: 'FET6', FET_Name: 'Bootstrap', FET_Image: '' },
+      { FET_Id: 'FET7', FET_Name: 'JSF', FET_Image: '' },
+    ];
+
+    const backEndTech=[
+      { BET_Id: 'BET1', BET_Name: 'ASP.NET MVC5', BET_Image:'' },
+      { BET_Id: 'BET2', BET_Name: 'ASP.NET Core', BET_Image:'' },
+      { BET_Id: 'BET3', BET_Name: 'Razor Pages', BET_Image: '' },
+      { BET_Id: 'BET4', BET_Name: 'ADO.NET', BET_Image: '' },
+      { BET_Id: 'BET5', BET_Name: 'Entity Framework Core', BET_Image: '' },
+      { BET_Id: 'BET6', BET_Name: 'LINQ', BET_Image: '' },
+      { BET_Id: 'BET7', BET_Name: 'Repository Pattern', BET_Image: '' }
+    ];
+
+    const deploymentEnv=[
+      {DE_Id:'DE1' ,DE_Name: 'IIS', DE_Image: ''},
+      {DE_Id:'DE2' ,DE_Name: 'Apache', DE_Image: ''},
+      {DE_Id:'DE3' ,DE_Name: 'FireBase', DE_Image: ''},
+      {DE_Id:'DE4' ,DE_Name: 'GlassFish Server', DE_Image: ''}
+      ];
+
+    const storage=[
+      {S_Id: 'S1', S_Name: 'SQLSever', S_Image: ''},
+      {S_Id: 'S2', S_Name: 'MySQL', S_Image: ''},
+      {S_Id: 'S3', S_Name: 'Oracle', S_Image: ''},
+      {S_Id: 'S4', S_Name: 'PLSQL', S_Image: ''},
+      {S_Id: 'S5', S_Name: 'NoSQL', S_Image: ''},
+    ];
+
+    const tools=[
+      {T_Id: 'T1', T_Name: 'Visual Stdio', T_Image:''},
+      {T_Id: 'T2', T_Name: 'Visual Studio Code', T_Image:''},
+      {T_Id: 'T3', T_Name: 'Webstrom', T_Image:''},
+      {T_Id: 'T4', T_Name: 'GitHub', T_Image:''},
+      {T_Id: 'T5', T_Name: 'SourceTree', T_Image:''},
+      {T_Id: 'T6', T_Name: 'JIRA', T_Image:''},
+      {T_Id: 'T7', T_Name: 'UIPath', T_Image:''},
+      {T_Id: 'T8', T_Name: 'PowerBI', T_Image:''},
+
+    ]
+
+    const platforms=[
+      {PN_Id: 'PN1', PN_Name: 'Windows', PN_Image: ''},
+      {PN_Id: 'PN2', PN_Name: 'Mac', PN_Image: ''},
+      {PN_Id: 'PN3', PN_Name: 'UNIX', PN_Image: ''},
+      {PN_Id: 'PN4', PN_Name: 'HTTP', PN_Image: ''},
+    ]
+
+    return {
+      education,
+      certifications,
+      programmingLanguages,
+      frontEndTech,
+      backEndTech,
+      deploymentEnv,
+      storage,
+      tools,
+      platforms
+    }
+  }
 
 }
