@@ -13,6 +13,7 @@ import {AboutComponent} from "./about/about.component";
 import {ContactComponent} from "./contact/contact.component";
 import {EducationComponent} from "./education/education.component";
 import { CertificationComponent } from './certification/certification.component';
+import {SkillsComponent} from "./skills/skills.component";
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CertificationComponent } from './certification/certification.component'
     AboutComponent,
     ContactComponent,
     EducationComponent,
-    CertificationComponent
+    CertificationComponent,
+    SkillsComponent
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
