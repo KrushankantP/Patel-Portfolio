@@ -64,11 +64,24 @@ export class InMemoryDataService implements InMemoryDbService {
 
     ];
 
+    const experience =[
+      {
+        company_Name: 'Arche Softronix pvt.Ltd',
+        role: 'Software Developer',
+        duration_years: 'Feb, 2016 - April, 2018',
+        point_1: 'Designed, analyzed and coded scalable applications, by collaborating with in-house development team.',
+        point_2: 'Developed user interfaces using HTML5, CSS3, JavaScript, AJAX and jQuery.',
+        point_3: 'Performed Unit Testing, Optimization and documentation of code.',
+        point_4: 'Created REST API and consumed them using jQuery.',
+        point_5: 'Implemented Business, Data-Access, Presentation Logic using n-tier Architecture'
+      }
+    ]
+
     const programmingLanguages=[
      { PL_Id: 'PL1', PL_Name: 'JavaScript', PL_Image: '' },
      { PL_Id: 'PL2', PL_Name: 'TypeScript', PL_Image: '' },
      { PL_Id: 'PL3', PL_Name: 'C#', PL_Image: '' },
-     { PL_Id: 'PL3', PL_Name: 'C#', PL_Image: '' }
+     { PL_Id: 'PL3', PL_Name: 'Java', PL_Image: '' }
    ];
 
     const frontEndTech=[
@@ -76,8 +89,8 @@ export class InMemoryDataService implements InMemoryDbService {
       { FET_Id: 'FET2', FET_Name: 'CSS3', FET_Image:'' },
       { FET_Id: 'FET3', FET_Name: 'Angular 6+', FET_Image: '' },
       { FET_Id: 'FET4', FET_Name: 'JSON', FET_Image: '' },
-      { FET_Id: 'FET5', FET_Name: 'AJAX', FET_Image: '' },
-      { FET_Id: 'FET6', FET_Name: 'Bootstrap', FET_Image: '' },
+      { FET_Id: 'FET5', FET_Name: 'Bootstrap', FET_Image: '' },
+      { FET_Id: 'FET6', FET_Name: 'AJAX', FET_Image: '' },
       { FET_Id: 'FET7', FET_Name: 'JSF', FET_Image: '' },
     ];
 
@@ -109,7 +122,7 @@ export class InMemoryDataService implements InMemoryDbService {
     const tools=[
       {T_Id: 'T1', T_Name: 'Visual Stdio', T_Image:''},
       {T_Id: 'T2', T_Name: 'Visual Studio Code', T_Image:''},
-      {T_Id: 'T3', T_Name: 'Webstrom', T_Image:''},
+      {T_Id: 'T3', T_Name: 'WebStorm', T_Image:''},
       {T_Id: 'T4', T_Name: 'GitHub', T_Image:''},
       {T_Id: 'T5', T_Name: 'SourceTree', T_Image:''},
       {T_Id: 'T6', T_Name: 'JIRA', T_Image:''},
@@ -128,13 +141,15 @@ export class InMemoryDataService implements InMemoryDbService {
     return {
       education,
       certifications,
+      experience,
       programmingLanguages,
       frontEndTech,
       backEndTech,
       deploymentEnv,
       storage,
       tools,
-      platforms
+      platforms,
+
     }
   }
 
