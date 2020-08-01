@@ -8,6 +8,7 @@ import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
 import {InMemoryDataService} from "./in-memory-data.service";
 import {ProfileModule} from "./profile/profile.module";
 import {ProfileService} from "./profile/profile.service";
+import {SkillService} from "./profile/service/skill.service";
 
 
 @NgModule({
@@ -22,7 +23,10 @@ import {ProfileService} from "./profile/profile.service";
     (InMemoryDataService,{dataEncapsulation:false}),
     ProfileModule
   ],
-  providers: [ProfileService],
+  providers: [
+    ProfileService,
+    SkillService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
