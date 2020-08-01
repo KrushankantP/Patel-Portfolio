@@ -1,0 +1,28 @@
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -10px;
+  color: dimgray;
+  align-items: center;
+  margin: 5px;
+}
+.span-btn{
+  font-size: small;
+  cursor :pointer;
+  background-color :rgb(21,70,95);
+  color:whitesmoke;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: .5rem .75rem;
+  transition: all .15s ease-in-out;
+  border-radius: .25rem;
+
+}
+.subTitle{
+  color:#e2786c;
+  font-size: large;
+  font-weight: bolder;
+  font-family:  sans-serif;
+}
+
+

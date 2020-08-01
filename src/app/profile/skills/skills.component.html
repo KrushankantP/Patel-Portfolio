@@ -1,0 +1,91 @@
+<div class="section" id="skill">
+  <div class="container mt-3" style="background-color: #00334d">
+    <div class="h4 text-center mb-3 title">Skills</div>
+    <div class="card" style="background-color: #00334d"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="subTitle mb-1">Programming Languages: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let pl of programingLanguages">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{pl.PL_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <span class="subTitle mb-1">Front-End Technology: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let fet of frontend">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{fet.FET_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <span class="subTitle mb-1">Back-End Technology: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let bet of backend">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{bet.BET_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <span class="subTitle mb-1 mt-3">Storage: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let sto of storage">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{sto.S_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <span class="subTitle mb-1 mt-3">Tools: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let Tol of Tools">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{Tol.T_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <span class="subTitle mb-1 mt-3">Deployment Environment: </span>
+            <div class="row">
+              <div class="progress-container skill-items">
+                <div class="skill-items" *ngFor="let devEnv of deploymentEnv">
+                <span class="skill-item">
+                  <span></span>
+                  <span class="span-btn">{{devEnv.DE_Name}}</span>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
